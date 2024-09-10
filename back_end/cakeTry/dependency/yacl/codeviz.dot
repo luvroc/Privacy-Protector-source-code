@@ -1,0 +1,557 @@
+digraph codeviz {
+    splines=true
+    sep="+15,15"
+    overlap=scalexy
+
+    node [shape=Mrecord, fontsize=12]
+
+    node [fillcolor="#ccccff", style=filled] "base/aligned_vector.h"                     [label = "base/aligned_vector.h"]
+    node [fillcolor="#ccccff", style=filled] "base/block.h"                              [label = "base/block.h"]
+    node [fillcolor="#ccccff", style=filled] "base/buffer.h"                             [label = "base/buffer.h"]
+    node [fillcolor="#ccccff", style=filled] "base/byte_container_view.h"                [label = "base/byte_container_view.h"]
+    node [fillcolor="#ccccff", style=filled] "base/dynamic_bitset.h"                     [label = "base/dynamic_bitset.h"]
+    node [fillcolor="#ccccff", style=filled] "base/exception.h"                          [label = "base/exception.h"]
+    node [fillcolor="#ccccff", style=filled] "base/int128.h"                             [label = "base/int128.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/aead/gcm_crypto.h"                  [label = "crypto/aead/gcm_crypto.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/aead/sm4_mac.h"                     [label = "crypto/aead/sm4_mac.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/aes/aes_intrinsics.h"               [label = "crypto/aes/aes_intrinsics.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/aes/aes_opt.h"                      [label = "crypto/aes/aes_opt.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/block_cipher/symmetric_crypto.h"    [label = "crypto/block_cipher/symmetric_crypto.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/commitment/pedersen_commit.h"       [label = "crypto/commitment/pedersen_commit.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/dpf/dpf.h"                          [label = "crypto/dpf/dpf.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ecc/any_ptr.h"                      [label = "crypto/ecc/any_ptr.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ecc/curve_meta.h"                   [label = "crypto/ecc/curve_meta.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ecc/ec_point.h"                     [label = "crypto/ecc/ec_point.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ecc/ecc_spi.h"                      [label = "crypto/ecc/ecc_spi.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ecc/group_sketch.h"                 [label = "crypto/ecc/group_sketch.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/envelope/digital_envelope.h"        [label = "crypto/envelope/digital_envelope.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hash/blake3.h"                      [label = "crypto/hash/blake3.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hash/hash_interface.h"              [label = "crypto/hash/hash_interface.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hash/hash_utils.h"                  [label = "crypto/hash/hash_utils.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hash/ssl_hash.h"                    [label = "crypto/hash/ssl_hash.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hmac/hmac.h"                        [label = "crypto/hmac/hmac.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hmac/hmac_sha256.h"                 [label = "crypto/hmac/hmac_sha256.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/hmac/hmac_sm3.h"                    [label = "crypto/hmac/hmac_sm3.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/key_utils.h"                        [label = "crypto/key_utils.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/openssl_wrappers.h"                 [label = "crypto/openssl_wrappers.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ossl-provider/helper.h"             [label = "crypto/ossl-provider/helper.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ossl-provider/rand_impl.h"          [label = "crypto/ossl-provider/rand_impl.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/ossl-provider/version.h"            [label = "crypto/ossl-provider/version.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/pairing/pairing.h"                  [label = "crypto/pairing/pairing.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/pke/asymmetric_crypto.h"            [label = "crypto/pke/asymmetric_crypto.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/pke/asymmetric_rsa_crypto.h"        [label = "crypto/pke/asymmetric_rsa_crypto.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/pke/asymmetric_sm2_crypto.h"        [label = "crypto/pke/asymmetric_sm2_crypto.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/rand/rand.h"                        [label = "crypto/rand/rand.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/sign/rsa_signing.h"                 [label = "crypto/sign/rsa_signing.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/sign/signing.h"                     [label = "crypto/sign/signing.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/sign/sm2_signing.h"                 [label = "crypto/sign/sm2_signing.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tools/benchmark.h"                  [label = "crypto/tools/benchmark.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tools/common.h"                     [label = "crypto/tools/common.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tools/crhash.h"                     [label = "crypto/tools/crhash.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tools/prg.h"                        [label = "crypto/tools/prg.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tools/ro.h"                         [label = "crypto/tools/ro.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tools/rp.h"                         [label = "crypto/tools/rp.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tpre/capsule.h"                     [label = "crypto/tpre/capsule.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tpre/hash.h"                        [label = "crypto/tpre/hash.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tpre/kdf.h"                         [label = "crypto/tpre/kdf.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/tpre/keys.h"                        [label = "crypto/tpre/keys.h"]
+    node [fillcolor="#ccffcc", style=filled] "crypto/tpre/tpre.h"                        [label = "crypto/tpre/tpre.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/vss/poly.h"                         [label = "crypto/vss/poly.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/vss/vss.h"                          [label = "crypto/vss/vss.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/zkp/sigma_config.h"                 [label = "crypto/zkp/sigma_config.h"]
+    node [fillcolor="#ccccff", style=filled] "crypto/zkp/sigma_owh.h"                    [label = "crypto/zkp/sigma_owh.h"]
+    node [fillcolor="#ccccff", style=filled] "io/kv/kvstore.h"                           [label = "io/kv/kvstore.h"]
+    node [fillcolor="#ccccff", style=filled] "io/kv/leveldb_kvstore.h"                   [label = "io/kv/leveldb_kvstore.h"]
+    node [fillcolor="#ccccff", style=filled] "io/kv/memory_kvstore.h"                    [label = "io/kv/memory_kvstore.h"]
+    node [fillcolor="#ccccff", style=filled] "io/msgpack/buffer.h"                       [label = "io/msgpack/buffer.h"]
+    node [fillcolor="#ccccff", style=filled] "io/msgpack/spec_traits.h"                  [label = "io/msgpack/spec_traits.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/csv_reader.h"                        [label = "io/rw/csv_reader.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/csv_writer.h"                        [label = "io/rw/csv_writer.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/float.h"                             [label = "io/rw/float.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/mmapped_file.h"                      [label = "io/rw/mmapped_file.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/reader.h"                            [label = "io/rw/reader.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/schema.h"                            [label = "io/rw/schema.h"]
+    node [fillcolor="#ccccff", style=filled] "io/rw/writer.h"                            [label = "io/rw/writer.h"]
+    node [fillcolor="#ccccff", style=filled] "io/stream/file_io.h"                       [label = "io/stream/file_io.h"]
+    node [fillcolor="#ccccff", style=filled] "io/stream/interface.h"                     [label = "io/stream/interface.h"]
+    node [fillcolor="#ccccff", style=filled] "io/stream/mem_io.h"                        [label = "io/stream/mem_io.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/base_ot.h"               [label = "kernel/algorithms/base_ot.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/base_ot_interface.h"     [label = "kernel/algorithms/base_ot_interface.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/base_vole.h"             [label = "kernel/algorithms/base_vole.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/ferret_ote.h"            [label = "kernel/algorithms/ferret_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/ferret_ote_rn.h"         [label = "kernel/algorithms/ferret_ote_rn.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/ferret_ote_un.h"         [label = "kernel/algorithms/ferret_ote_un.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/gywz_ote.h"              [label = "kernel/algorithms/gywz_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/iknp_ote.h"              [label = "kernel/algorithms/iknp_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/kkrt_ote.h"              [label = "kernel/algorithms/kkrt_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/kos_ote.h"               [label = "kernel/algorithms/kos_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/mp_vole.h"               [label = "kernel/algorithms/mp_vole.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/mpfss.h"                 [label = "kernel/algorithms/mpfss.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/ot_store.h"              [label = "kernel/algorithms/ot_store.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/portable_ot_interface.h" [label = "kernel/algorithms/portable_ot_interface.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/sgrr_ote.h"              [label = "kernel/algorithms/sgrr_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/silent_vole.h"           [label = "kernel/algorithms/silent_vole.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/softspoken_ote.h"        [label = "kernel/algorithms/softspoken_ote.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/algorithms/x86_asm_ot_interface.h"  [label = "kernel/algorithms/x86_asm_ot_interface.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/benchmark/ot_bench.h"               [label = "kernel/benchmark/ot_bench.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/code/benchmark.h"                   [label = "kernel/code/benchmark.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/code/code_interface.h"              [label = "kernel/code/code_interface.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/code/ea_code.h"                     [label = "kernel/code/ea_code.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/code/linear_code.h"                 [label = "kernel/code/linear_code.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/code/silver_code.h"                 [label = "kernel/code/silver_code.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/kernel.h"                           [label = "kernel/kernel.h"]
+    node [fillcolor="#ccccff", style=filled] "kernel/svole_kernel.h"                     [label = "kernel/svole_kernel.h"]
+    node [fillcolor="#ccccff", style=filled] "link/algorithm/allgather.h"                [label = "link/algorithm/allgather.h"]
+    node [fillcolor="#ccccff", style=filled] "link/algorithm/barrier.h"                  [label = "link/algorithm/barrier.h"]
+    node [fillcolor="#ccccff", style=filled] "link/algorithm/broadcast.h"                [label = "link/algorithm/broadcast.h"]
+    node [fillcolor="#ccccff", style=filled] "link/algorithm/gather.h"                   [label = "link/algorithm/gather.h"]
+    node [fillcolor="#ccccff", style=filled] "link/algorithm/scatter.h"                  [label = "link/algorithm/scatter.h"]
+    node [fillcolor="#ccccff", style=filled] "link/context.h"                            [label = "link/context.h"]
+    node [fillcolor="#ccccff", style=filled] "link/factory.h"                            [label = "link/factory.h"]
+    node [fillcolor="#ccccff", style=filled] "link/link.h"                               [label = "link/link.h"]
+    node [fillcolor="#ccccff", style=filled] "link/retry_options.h"                      [label = "link/retry_options.h"]
+    node [fillcolor="#ccccff", style=filled] "link/ssl_options.h"                        [label = "link/ssl_options.h"]
+    node [fillcolor="#ccccff", style=filled] "link/test_util.h"                          [label = "link/test_util.h"]
+    node [fillcolor="#ccccff", style=filled] "link/trace.h"                              [label = "link/trace.h"]
+    node [fillcolor="#ccccff", style=filled] "link/transport/brpc_blackbox_link.h"       [label = "link/transport/brpc_blackbox_link.h"]
+    node [fillcolor="#ccccff", style=filled] "link/transport/brpc_link.h"                [label = "link/transport/brpc_link.h"]
+    node [fillcolor="#ccccff", style=filled] "link/transport/channel.h"                  [label = "link/transport/channel.h"]
+    node [fillcolor="#ccccff", style=filled] "link/transport/channel_mem.h"              [label = "link/transport/channel_mem.h"]
+    node [fillcolor="#ccccff", style=filled] "link/transport/interconnection_link.h"     [label = "link/transport/interconnection_link.h"]
+    node [fillcolor="#ccccff", style=filled] "math/f2k/f2k.h"                            [label = "math/f2k/f2k.h"]
+    node [fillcolor="#ccccff", style=filled] "math/f2k/f2k_utils.h"                      [label = "math/f2k/f2k_utils.h"]
+    node [fillcolor="#ccccff", style=filled] "math/gadget.h"                             [label = "math/gadget.h"]
+    node [fillcolor="#ccccff", style=filled] "math/galois_field/gf.h"                    [label = "math/galois_field/gf.h"]
+    node [fillcolor="#ccccff", style=filled] "math/mpint/montgomery_math.h"              [label = "math/mpint/montgomery_math.h"]
+    node [fillcolor="#ccccff", style=filled] "math/mpint/mp_int.h"                       [label = "math/mpint/mp_int.h"]
+    node [fillcolor="#ccccff", style=filled] "math/mpint/mp_int_enforce.h"               [label = "math/mpint/mp_int_enforce.h"]
+    node [fillcolor="#ccccff", style=filled] "math/mpint/tommath_ext_features.h"         [label = "math/mpint/tommath_ext_features.h"]
+    node [fillcolor="#ccccff", style=filled] "math/mpint/tommath_ext_types.h"            [label = "math/mpint/tommath_ext_types.h"]
+    node [fillcolor="#ccccff", style=filled] "secparam.h"                                [label = "secparam.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/compile_time_utils.h"                [label = "utils/compile_time_utils.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/cuckoo_index.h"                      [label = "utils/cuckoo_index.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/elapsed_timer.h"                     [label = "utils/elapsed_timer.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/hamming.h"                           [label = "utils/hamming.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/hash_combine.h"                      [label = "utils/hash_combine.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/matrix_utils.h"                      [label = "utils/matrix_utils.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/parallel.h"                          [label = "utils/parallel.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/platform_utils.h"                    [label = "utils/platform_utils.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/scope_guard.h"                       [label = "utils/scope_guard.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/segment_tree.h"                      [label = "utils/segment_tree.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/serialize.h"                         [label = "utils/serialize.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/serializer.h"                        [label = "utils/serializer.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/serializer_adapter.h"                [label = "utils/serializer_adapter.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/spi/item.h"                          [label = "utils/spi/item.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/spi/spi_factory.h"                   [label = "utils/spi/spi_factory.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/spi/type_traits.h"                   [label = "utils/spi/type_traits.h"]
+    node [fillcolor="#ccccff", style=filled] "utils/thread_pool.h"                       [label = "utils/thread_pool.h"]
+
+    "base/block.h"                              -> "base/int128.h"
+    "base/buffer.h"                             -> "base/exception.h"
+    "base/byte_container_view.h"                -> "base/buffer.h" [style=dotted, label="?"]
+    "base/byte_container_view.h"                -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "base/dynamic_bitset.h"                     -> "base/exception.h"
+    "base/dynamic_bitset.h"                     -> "base/int128.h"
+    "crypto/aead/gcm_crypto.h"                  -> "base/byte_container_view.h"
+    "crypto/aead/gcm_crypto.h"                  -> "secparam.h"
+    "crypto/aead/sm4_mac.h"                     -> "base/byte_container_view.h"
+    "crypto/aead/sm4_mac.h"                     -> "secparam.h"
+    "crypto/aead/sm4_mac.h"                     -> "crypto/block_cipher/symmetric_crypto.h"
+    "crypto/aead/sm4_mac.h"                     -> "crypto/hash/ssl_hash.h"
+    "crypto/aead/sm4_mac.h"                     -> "crypto/hmac/hmac_sm3.h"
+    "crypto/aes/aes_intrinsics.h"               -> "base/exception.h"
+    "crypto/aes/aes_intrinsics.h"               -> "base/int128.h"
+    "crypto/aes/aes_intrinsics.h"               -> "secparam.h"
+    "crypto/aes/aes_opt.h"                      -> "crypto/aes/aes_intrinsics.h"
+    "crypto/block_cipher/symmetric_crypto.h"    -> "base/byte_container_view.h"
+    "crypto/block_cipher/symmetric_crypto.h"    -> "base/int128.h"
+    "crypto/block_cipher/symmetric_crypto.h"    -> "crypto/openssl_wrappers.h"
+    "crypto/block_cipher/symmetric_crypto.h"    -> "secparam.h"
+    "crypto/commitment/pedersen_commit.h"       -> "crypto/hash/hash_utils.h"
+    "crypto/commitment/pedersen_commit.h"       -> "crypto/zkp/sigma_owh.h"
+    "crypto/dpf/dpf.h"                          -> "base/exception.h"
+    "crypto/dpf/dpf.h"                          -> "base/int128.h"
+    "crypto/dpf/dpf.h"                          -> "crypto/tools/prg.h"
+    "crypto/ecc/any_ptr.h"                      -> "base/exception.h"
+    "crypto/ecc/ec_point.h"                     -> "crypto/ecc/any_ptr.h"
+    "crypto/ecc/ec_point.h"                     -> "math/mpint/mp_int.h"
+    "crypto/ecc/ecc_spi.h"                      -> "base/byte_container_view.h"
+    "crypto/ecc/ecc_spi.h"                      -> "crypto/ecc/curve_meta.h"
+    "crypto/ecc/ecc_spi.h"                      -> "crypto/ecc/ec_point.h"
+    "crypto/ecc/ecc_spi.h"                      -> "math/mpint/mp_int.h"
+    "crypto/ecc/ecc_spi.h"                      -> "utils/spi/spi_factory.h"
+    "crypto/ecc/group_sketch.h"                 -> "crypto/ecc/ecc_spi.h"
+    "crypto/envelope/digital_envelope.h"        -> "base/byte_container_view.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/aead/gcm_crypto.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/aead/sm4_mac.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/block_cipher/symmetric_crypto.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/hash/ssl_hash.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/hmac/hmac_sm3.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/pke/asymmetric_rsa_crypto.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/pke/asymmetric_sm2_crypto.h"
+    "crypto/envelope/digital_envelope.h"        -> "crypto/rand/rand.h"
+    "crypto/hash/blake3.h"                      -> "crypto/hash/blake3.h"
+    "crypto/hash/blake3.h"                      -> "base/byte_container_view.h"
+    "crypto/hash/blake3.h"                      -> "crypto/hash/hash_interface.h"
+    "crypto/hash/hash_interface.h"              -> "base/byte_container_view.h"
+    "crypto/hash/hash_interface.h"              -> "secparam.h"
+    "crypto/hash/hash_utils.h"                  -> "base/int128.h"
+    "crypto/hash/hash_utils.h"                  -> "crypto/hash/ssl_hash.h"
+    "crypto/hash/ssl_hash.h"                    -> "base/byte_container_view.h"
+    "crypto/hash/ssl_hash.h"                    -> "crypto/hash/hash_interface.h"
+    "crypto/hash/ssl_hash.h"                    -> "crypto/openssl_wrappers.h"
+    "crypto/hmac/hmac.h"                        -> "base/byte_container_view.h"
+    "crypto/hmac/hmac.h"                        -> "crypto/openssl_wrappers.h"
+    "crypto/hmac/hmac.h"                        -> "crypto/hash/hash_interface.h"
+    "crypto/hmac/hmac_sha256.h"                 -> "crypto/hmac/hmac.h"
+    "crypto/hmac/hmac_sm3.h"                    -> "crypto/hmac/hmac.h"
+    "crypto/key_utils.h"                        -> "crypto/openssl_wrappers.h"
+    "crypto/openssl_wrappers.h"                 -> "crypto/hash/hash_interface.h"
+    "crypto/openssl_wrappers.h"                 -> "base/byte_container_view.h"
+    "crypto/openssl_wrappers.h"                 -> "utils/scope_guard.h"
+    "crypto/ossl-provider/helper.h"             -> "base/exception.h"
+    "crypto/ossl-provider/rand_impl.h"          -> "crypto/rand/rand.h"
+    "crypto/ossl-provider/rand_impl.h"          -> "crypto/openssl_wrappers.h"
+    "crypto/pairing/pairing.h"                  -> "crypto/ecc/ecc_spi.h"
+    "crypto/pairing/pairing.h"                  -> "math/galois_field/gf.h"
+    "crypto/pairing/pairing.h"                  -> "utils/spi/spi_factory.h"
+    "crypto/pke/asymmetric_crypto.h"            -> "base/byte_container_view.h"
+    "crypto/pke/asymmetric_rsa_crypto.h"        -> "crypto/key_utils.h"
+    "crypto/pke/asymmetric_rsa_crypto.h"        -> "crypto/pke/asymmetric_crypto.h"
+    "crypto/pke/asymmetric_rsa_crypto.h"        -> "secparam.h"
+    "crypto/pke/asymmetric_sm2_crypto.h"        -> "crypto/key_utils.h"
+    "crypto/pke/asymmetric_sm2_crypto.h"        -> "crypto/pke/asymmetric_crypto.h"
+    "crypto/pke/asymmetric_sm2_crypto.h"        -> "secparam.h"
+    "crypto/rand/rand.h"                        -> "base/dynamic_bitset.h"
+    "crypto/rand/rand.h"                        -> "base/int128.h"
+    "crypto/rand/rand.h"                        -> "crypto/openssl_wrappers.h"
+    "crypto/rand/rand.h"                        -> "secparam.h"
+    "crypto/sign/rsa_signing.h"                 -> "crypto/key_utils.h"
+    "crypto/sign/rsa_signing.h"                 -> "crypto/sign/signing.h"
+    "crypto/sign/rsa_signing.h"                 -> "secparam.h"
+    "crypto/sign/rsa_signing.h"                 -> "crypto/hash/hash_utils.h"
+    "crypto/sign/signing.h"                     -> "base/byte_container_view.h"
+    "crypto/sign/sm2_signing.h"                 -> "crypto/key_utils.h"
+    "crypto/sign/sm2_signing.h"                 -> "crypto/sign/signing.h"
+    "crypto/sign/sm2_signing.h"                 -> "secparam.h"
+    "crypto/sign/sm2_signing.h"                 -> "crypto/hash/hash_utils.h"
+    "crypto/tools/benchmark.h"                  -> "crypto/tools/benchmark.h" [style=dotted, label="?"]
+    "crypto/tools/benchmark.h"                  -> "kernel/code/benchmark.h" [style=dotted, label="?"]
+    "crypto/tools/benchmark.h"                  -> "crypto/rand/rand.h"
+    "crypto/tools/benchmark.h"                  -> "crypto/tools/crhash.h"
+    "crypto/tools/benchmark.h"                  -> "crypto/tools/prg.h"
+    "crypto/tools/benchmark.h"                  -> "crypto/tools/ro.h"
+    "crypto/tools/benchmark.h"                  -> "crypto/tools/rp.h"
+    "crypto/tools/common.h"                     -> "crypto/rand/rand.h"
+    "crypto/tools/common.h"                     -> "link/link.h"
+    "crypto/tools/common.h"                     -> "utils/serialize.h"
+    "crypto/tools/crhash.h"                     -> "base/int128.h"
+    "crypto/tools/crhash.h"                     -> "crypto/tools/rp.h"
+    "crypto/tools/prg.h"                        -> "base/dynamic_bitset.h"
+    "crypto/tools/prg.h"                        -> "base/int128.h"
+    "crypto/tools/prg.h"                        -> "secparam.h"
+    "crypto/tools/prg.h"                        -> "crypto/block_cipher/symmetric_crypto.h"
+    "crypto/tools/ro.h"                         -> "base/buffer.h" [style=dotted, label="?"]
+    "crypto/tools/ro.h"                         -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "crypto/tools/ro.h"                         -> "base/exception.h"
+    "crypto/tools/ro.h"                         -> "crypto/hash/hash_utils.h"
+    "crypto/tools/rp.h"                         -> "base/exception.h"
+    "crypto/tools/rp.h"                         -> "base/int128.h"
+    "crypto/tools/rp.h"                         -> "crypto/block_cipher/symmetric_crypto.h"
+    "crypto/tpre/capsule.h"                     -> "crypto/ecc/ec_point.h"
+    "crypto/tpre/capsule.h"                     -> "crypto/tpre/keys.h"
+    "crypto/tpre/capsule.h"                     -> "math/mpint/mp_int.h"
+    "crypto/tpre/hash.h"                        -> "crypto/ecc/ecc_spi.h"
+    "crypto/tpre/kdf.h"                         -> "crypto/hash/hash_utils.h"
+    "crypto/tpre/keys.h"                        -> "crypto/ecc/ec_point.h"
+    "crypto/tpre/keys.h"                        -> "crypto/tpre/hash.h"
+    "crypto/tpre/keys.h"                        -> "math/mpint/mp_int.h"
+    "crypto/tpre/tpre.h"                        -> "crypto/tpre/capsule.h"
+    "crypto/tpre/tpre.h"                        -> "crypto/tpre/keys.h"
+    "crypto/vss/poly.h"                         -> "math/mpint/mp_int.h"
+    "crypto/vss/vss.h"                          -> "crypto/ecc/ecc_spi.h"
+    "crypto/vss/vss.h"                          -> "crypto/vss/poly.h"
+    "crypto/vss/vss.h"                          -> "math/mpint/mp_int.h"
+    "crypto/zkp/sigma_config.h"                 -> "crypto/ecc/ecc_spi.h"
+    "crypto/zkp/sigma_config.h"                 -> "crypto/hash/hash_interface.h"
+    "crypto/zkp/sigma_owh.h"                    -> "crypto/ecc/group_sketch.h"
+    "crypto/zkp/sigma_owh.h"                    -> "crypto/rand/rand.h"
+    "crypto/zkp/sigma_owh.h"                    -> "crypto/zkp/sigma_config.h"
+    "io/kv/kvstore.h"                           -> "base/buffer.h" [style=dotted, label="?"]
+    "io/kv/kvstore.h"                           -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "io/kv/kvstore.h"                           -> "base/byte_container_view.h"
+    "io/kv/leveldb_kvstore.h"                   -> "io/kv/kvstore.h"
+    "io/kv/memory_kvstore.h"                    -> "io/kv/kvstore.h"
+    "io/msgpack/buffer.h"                       -> "base/buffer.h" [style=dotted, label="?"]
+    "io/msgpack/buffer.h"                       -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "io/rw/csv_reader.h"                        -> "io/rw/reader.h"
+    "io/rw/csv_writer.h"                        -> "io/rw/schema.h"
+    "io/rw/csv_writer.h"                        -> "io/rw/writer.h"
+    "io/rw/reader.h"                            -> "io/rw/schema.h"
+    "io/rw/reader.h"                            -> "io/stream/interface.h"
+    "io/rw/schema.h"                            -> "base/exception.h"
+    "io/rw/writer.h"                            -> "io/rw/schema.h"
+    "io/rw/writer.h"                            -> "io/stream/interface.h"
+    "io/stream/file_io.h"                       -> "io/stream/interface.h"
+    "io/stream/mem_io.h"                        -> "io/stream/interface.h"
+    "kernel/algorithms/base_ot.h"               -> "base/dynamic_bitset.h"
+    "kernel/algorithms/base_ot.h"               -> "base/int128.h"
+    "kernel/algorithms/base_ot.h"               -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/base_ot.h"               -> "link/link.h"
+    "kernel/algorithms/base_ot.h"               -> "secparam.h"
+    "kernel/algorithms/base_ot.h"               -> "kernel/algorithms/x86_asm_ot_interface.h"
+    "kernel/algorithms/base_ot.h"               -> "kernel/algorithms/portable_ot_interface.h"
+    "kernel/algorithms/base_ot_interface.h"     -> "base/dynamic_bitset.h"
+    "kernel/algorithms/base_ot_interface.h"     -> "base/int128.h"
+    "kernel/algorithms/base_ot_interface.h"     -> "link/link.h"
+    "kernel/algorithms/base_vole.h"             -> "base/exception.h"
+    "kernel/algorithms/base_vole.h"             -> "base/int128.h"
+    "kernel/algorithms/base_vole.h"             -> "math/f2k/f2k_utils.h"
+    "kernel/algorithms/base_vole.h"             -> "math/gadget.h"
+    "kernel/algorithms/base_vole.h"             -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/base_vole.h"             -> "kernel/algorithms/softspoken_ote.h"
+    "kernel/algorithms/base_vole.h"             -> "secparam.h"
+    "kernel/algorithms/ferret_ote.h"            -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/ferret_ote.h"            -> "math/gadget.h"
+    "kernel/algorithms/ferret_ote.h"            -> "secparam.h"
+    "kernel/algorithms/ferret_ote.h"            -> "utils/cuckoo_index.h"
+    "kernel/algorithms/ferret_ote.h"            -> "kernel/algorithms/ferret_ote_rn.h"
+    "kernel/algorithms/ferret_ote.h"            -> "kernel/algorithms/ferret_ote_un.h"
+    "kernel/algorithms/ferret_ote.h"            -> "kernel/algorithms/gywz_ote.h"
+    "kernel/algorithms/ferret_ote.h"            -> "kernel/code/linear_code.h"
+    "kernel/algorithms/ferret_ote_rn.h"         -> "crypto/hash/hash_utils.h"
+    "kernel/algorithms/ferret_ote_rn.h"         -> "crypto/tools/common.h"
+    "kernel/algorithms/ferret_ote_rn.h"         -> "math/f2k/f2k_utils.h"
+    "kernel/algorithms/ferret_ote_rn.h"         -> "secparam.h"
+    "kernel/algorithms/ferret_ote_rn.h"         -> "kernel/algorithms/gywz_ote.h"
+    "kernel/algorithms/ferret_ote_un.h"         -> "math/gadget.h"
+    "kernel/algorithms/ferret_ote_un.h"         -> "secparam.h"
+    "kernel/algorithms/ferret_ote_un.h"         -> "utils/cuckoo_index.h"
+    "kernel/algorithms/ferret_ote_un.h"         -> "crypto/tools/rp.h"
+    "kernel/algorithms/ferret_ote_un.h"         -> "kernel/algorithms/gywz_ote.h"
+    "kernel/algorithms/gywz_ote.h"              -> "base/int128.h"
+    "kernel/algorithms/gywz_ote.h"              -> "link/link.h"
+    "kernel/algorithms/gywz_ote.h"              -> "secparam.h"
+    "kernel/algorithms/gywz_ote.h"              -> "crypto/aes/aes_opt.h"
+    "kernel/algorithms/gywz_ote.h"              -> "crypto/rand/rand.h"
+    "kernel/algorithms/gywz_ote.h"              -> "crypto/tools/crhash.h"
+    "kernel/algorithms/gywz_ote.h"              -> "crypto/tools/prg.h"
+    "kernel/algorithms/gywz_ote.h"              -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/iknp_ote.h"              -> "base/dynamic_bitset.h"
+    "kernel/algorithms/iknp_ote.h"              -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/iknp_ote.h"              -> "link/link.h"
+    "kernel/algorithms/iknp_ote.h"              -> "secparam.h"
+    "kernel/algorithms/iknp_ote.h"              -> "utils/matrix_utils.h"
+    "kernel/algorithms/iknp_ote.h"              -> "crypto/tools/crhash.h"
+    "kernel/algorithms/iknp_ote.h"              -> "crypto/tools/prg.h"
+    "kernel/algorithms/iknp_ote.h"              -> "crypto/tools/rp.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "link/link.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "secparam.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/aes/aes_intrinsics.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/aes/aes_opt.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/block_cipher/symmetric_crypto.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/hash/hash_utils.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/rand/rand.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/tools/prg.h"
+    "kernel/algorithms/kkrt_ote.h"              -> "crypto/tools/ro.h"
+    "kernel/algorithms/kos_ote.h"               -> "base/dynamic_bitset.h"
+    "kernel/algorithms/kos_ote.h"               -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/kos_ote.h"               -> "link/link.h"
+    "kernel/algorithms/kos_ote.h"               -> "secparam.h"
+    "kernel/algorithms/kos_ote.h"               -> "crypto/rand/rand.h"
+    "kernel/algorithms/kos_ote.h"               -> "crypto/tools/crhash.h"
+    "kernel/algorithms/kos_ote.h"               -> "crypto/tools/prg.h"
+    "kernel/algorithms/kos_ote.h"               -> "crypto/tools/rp.h"
+    "kernel/algorithms/mp_vole.h"               -> "crypto/hash/hash_utils.h"
+    "kernel/algorithms/mp_vole.h"               -> "crypto/rand/rand.h"
+    "kernel/algorithms/mp_vole.h"               -> "crypto/tools/common.h"
+    "kernel/algorithms/mp_vole.h"               -> "kernel/algorithms/mpfss.h"
+    "kernel/algorithms/mp_vole.h"               -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/mp_vole.h"               -> "math/f2k/f2k_utils.h"
+    "kernel/algorithms/mp_vole.h"               -> "math/gadget.h"
+    "kernel/algorithms/mp_vole.h"               -> "secparam.h"
+    "kernel/algorithms/mpfss.h"                 -> "crypto/rand/rand.h"
+    "kernel/algorithms/mpfss.h"                 -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/mpfss.h"                 -> "secparam.h"
+    "kernel/algorithms/ot_store.h"              -> "base/aligned_vector.h"
+    "kernel/algorithms/ot_store.h"              -> "base/dynamic_bitset.h"
+    "kernel/algorithms/ot_store.h"              -> "base/exception.h"
+    "kernel/algorithms/ot_store.h"              -> "base/int128.h"
+    "kernel/algorithms/ot_store.h"              -> "link/context.h"
+    "kernel/algorithms/portable_ot_interface.h" -> "kernel/algorithms/base_ot_interface.h"
+    "kernel/algorithms/portable_ot_interface.h" -> "secparam.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "link/link.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "secparam.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "crypto/aes/aes_opt.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "crypto/rand/rand.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "crypto/tools/crhash.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "crypto/tools/prg.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "crypto/tools/ro.h"
+    "kernel/algorithms/sgrr_ote.h"              -> "crypto/tools/rp.h"
+    "kernel/algorithms/silent_vole.h"           -> "base/exception.h"
+    "kernel/algorithms/silent_vole.h"           -> "base/int128.h"
+    "kernel/algorithms/silent_vole.h"           -> "link/context.h"
+    "kernel/algorithms/silent_vole.h"           -> "secparam.h"
+    "kernel/algorithms/silent_vole.h"           -> "crypto/rand/rand.h"
+    "kernel/algorithms/silent_vole.h"           -> "kernel/algorithms/base_vole.h"
+    "kernel/algorithms/silent_vole.h"           -> "kernel/algorithms/mp_vole.h"
+    "kernel/algorithms/silent_vole.h"           -> "kernel/code/code_interface.h"
+    "kernel/algorithms/silent_vole.h"           -> "kernel/code/ea_code.h"
+    "kernel/algorithms/silent_vole.h"           -> "kernel/code/silver_code.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "base/dynamic_bitset.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "base/exception.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "base/int128.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "link/context.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "link/link.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "secparam.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "crypto/rand/rand.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "crypto/tools/crhash.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "crypto/tools/prg.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "crypto/tools/rp.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "kernel/algorithms/base_ot.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "kernel/algorithms/ot_store.h"
+    "kernel/algorithms/softspoken_ote.h"        -> "kernel/algorithms/sgrr_ote.h"
+    "kernel/algorithms/x86_asm_ot_interface.h"  -> "kernel/algorithms/base_ot_interface.h"
+    "kernel/algorithms/x86_asm_ot_interface.h"  -> "secparam.h"
+    "kernel/benchmark/ot_bench.h"               -> "crypto/tools/benchmark.h" [style=dotted, label="?"]
+    "kernel/benchmark/ot_bench.h"               -> "kernel/code/benchmark.h" [style=dotted, label="?"]
+    "kernel/benchmark/ot_bench.h"               -> "base/aligned_vector.h"
+    "kernel/benchmark/ot_bench.h"               -> "base/exception.h"
+    "kernel/benchmark/ot_bench.h"               -> "base/int128.h"
+    "kernel/benchmark/ot_bench.h"               -> "crypto/rand/rand.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/base_ot.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/ferret_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/gywz_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/iknp_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/kkrt_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/kos_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/ot_store.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/sgrr_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "kernel/algorithms/softspoken_ote.h"
+    "kernel/benchmark/ot_bench.h"               -> "link/test_util.h"
+    "kernel/benchmark/ot_bench.h"               -> "utils/matrix_utils.h"
+    "kernel/code/benchmark.h"                   -> "crypto/tools/benchmark.h" [style=dotted, label="?"]
+    "kernel/code/benchmark.h"                   -> "kernel/code/benchmark.h" [style=dotted, label="?"]
+    "kernel/code/benchmark.h"                   -> "base/aligned_vector.h"
+    "kernel/code/benchmark.h"                   -> "crypto/rand/rand.h"
+    "kernel/code/benchmark.h"                   -> "kernel/code/ea_code.h"
+    "kernel/code/benchmark.h"                   -> "kernel/code/linear_code.h"
+    "kernel/code/benchmark.h"                   -> "kernel/code/silver_code.h"
+    "kernel/code/ea_code.h"                     -> "base/block.h"
+    "kernel/code/ea_code.h"                     -> "base/exception.h"
+    "kernel/code/ea_code.h"                     -> "base/int128.h"
+    "kernel/code/ea_code.h"                     -> "kernel/code/code_interface.h"
+    "kernel/code/ea_code.h"                     -> "kernel/code/linear_code.h"
+    "kernel/code/linear_code.h"                 -> "base/exception.h"
+    "kernel/code/linear_code.h"                 -> "base/int128.h"
+    "kernel/code/linear_code.h"                 -> "crypto/tools/rp.h"
+    "kernel/code/linear_code.h"                 -> "kernel/code/code_interface.h"
+    "kernel/code/linear_code.h"                 -> "math/gadget.h"
+    "kernel/code/silver_code.h"                 -> "kernel/code/code_interface.h"
+    "kernel/code/silver_code.h"                 -> "base/block.h"
+    "kernel/code/silver_code.h"                 -> "base/exception.h"
+    "kernel/code/silver_code.h"                 -> "base/int128.h"
+    "kernel/code/silver_code.h"                 -> "kernel/code/code_interface.h"
+    "kernel/kernel.h"                           -> "link/context.h"
+    "kernel/svole_kernel.h"                     -> "kernel/kernel.h"
+    "kernel/svole_kernel.h"                     -> "kernel/algorithms/silent_vole.h"
+    "kernel/svole_kernel.h"                     -> "kernel/code/silver_code.h"
+    "link/algorithm/allgather.h"                -> "link/context.h"
+    "link/algorithm/barrier.h"                  -> "link/context.h"
+    "link/algorithm/broadcast.h"                -> "base/buffer.h" [style=dotted, label="?"]
+    "link/algorithm/broadcast.h"                -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "link/algorithm/broadcast.h"                -> "base/byte_container_view.h"
+    "link/algorithm/broadcast.h"                -> "link/context.h"
+    "link/algorithm/gather.h"                   -> "base/buffer.h" [style=dotted, label="?"]
+    "link/algorithm/gather.h"                   -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "link/algorithm/gather.h"                   -> "base/byte_container_view.h"
+    "link/algorithm/gather.h"                   -> "link/context.h"
+    "link/algorithm/scatter.h"                  -> "base/buffer.h" [style=dotted, label="?"]
+    "link/algorithm/scatter.h"                  -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "link/algorithm/scatter.h"                  -> "link/context.h"
+    "link/context.h"                            -> "crypto/tools/common.h"
+    "link/context.h"                            -> "base/byte_container_view.h"
+    "link/context.h"                            -> "link/retry_options.h"
+    "link/context.h"                            -> "link/ssl_options.h"
+    "link/context.h"                            -> "link/transport/channel.h"
+    "link/context.h"                            -> "utils/hash_combine.h"
+    "link/factory.h"                            -> "link/context.h"
+    "link/link.h"                               -> "link/algorithm/allgather.h"
+    "link/link.h"                               -> "link/algorithm/barrier.h"
+    "link/link.h"                               -> "link/algorithm/broadcast.h"
+    "link/link.h"                               -> "link/algorithm/gather.h"
+    "link/link.h"                               -> "link/algorithm/scatter.h"
+    "link/link.h"                               -> "link/context.h"
+    "link/link.h"                               -> "link/factory.h"
+    "link/test_util.h"                          -> "base/buffer.h" [style=dotted, label="?"]
+    "link/test_util.h"                          -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "link/test_util.h"                          -> "link/context.h"
+    "link/test_util.h"                          -> "link/factory.h"
+    "link/transport/brpc_blackbox_link.h"       -> "link/transport/channel.h"
+    "link/transport/brpc_blackbox_link.h"       -> "link/ssl_options.h"
+    "link/transport/brpc_blackbox_link.h"       -> "link/transport/channel.h"
+    "link/transport/brpc_blackbox_link.h"       -> "link/transport/interconnection_link.h"
+    "link/transport/brpc_link.h"                -> "link/transport/channel.h"
+    "link/transport/brpc_link.h"                -> "base/exception.h"
+    "link/transport/brpc_link.h"                -> "link/ssl_options.h"
+    "link/transport/brpc_link.h"                -> "link/transport/channel.h"
+    "link/transport/brpc_link.h"                -> "link/transport/interconnection_link.h"
+    "link/transport/channel.h"                  -> "base/buffer.h" [style=dotted, label="?"]
+    "link/transport/channel.h"                  -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "link/transport/channel.h"                  -> "base/byte_container_view.h"
+    "link/transport/channel.h"                  -> "base/exception.h"
+    "link/transport/channel.h"                  -> "link/retry_options.h"
+    "link/transport/channel.h"                  -> "utils/segment_tree.h"
+    "link/transport/channel_mem.h"              -> "link/transport/channel.h"
+    "link/transport/interconnection_link.h"     -> "link/transport/channel.h"
+    "link/transport/interconnection_link.h"     -> "link/ssl_options.h"
+    "link/transport/interconnection_link.h"     -> "link/transport/channel.h"
+    "math/f2k/f2k.h"                            -> "base/block.h"
+    "math/f2k/f2k.h"                            -> "base/exception.h"
+    "math/f2k/f2k.h"                            -> "base/int128.h"
+    "math/f2k/f2k_utils.h"                      -> "base/aligned_vector.h"
+    "math/f2k/f2k_utils.h"                      -> "math/f2k/f2k.h"
+    "math/f2k/f2k_utils.h"                      -> "math/gadget.h"
+    "math/gadget.h"                             -> "base/exception.h"
+    "math/galois_field/gf.h"                    -> "math/mpint/mp_int.h"
+    "math/galois_field/gf.h"                    -> "utils/spi/item.h"
+    "math/galois_field/gf.h"                    -> "utils/spi/spi_factory.h"
+    "math/mpint/montgomery_math.h"              -> "math/mpint/mp_int.h"
+    "math/mpint/mp_int.h"                       -> "base/byte_container_view.h"
+    "math/mpint/mp_int.h"                       -> "base/int128.h"
+    "math/mpint/mp_int.h"                       -> "math/mpint/mp_int_enforce.h"
+    "math/mpint/mp_int.h"                       -> "math/mpint/tommath_ext_features.h"
+    "math/mpint/mp_int_enforce.h"               -> "base/exception.h"
+    "math/mpint/tommath_ext_features.h"         -> "utils/spi/type_traits.h"
+    "math/mpint/tommath_ext_types.h"            -> "base/int128.h"
+    "secparam.h"                                -> "base/exception.h"
+    "secparam.h"                                -> "math/gadget.h"
+    "secparam.h"                                -> "utils/compile_time_utils.h"
+    "utils/cuckoo_index.h"                      -> "base/exception.h"
+    "utils/cuckoo_index.h"                      -> "base/int128.h"
+    "utils/hamming.h"                           -> "base/exception.h"
+    "utils/hamming.h"                           -> "base/int128.h"
+    "utils/matrix_utils.h"                      -> "base/block.h"
+    "utils/matrix_utils.h"                      -> "base/byte_container_view.h"
+    "utils/matrix_utils.h"                      -> "base/int128.h"
+    "utils/parallel.h"                          -> "base/exception.h"
+    "utils/serialize.h"                         -> "base/buffer.h" [style=dotted, label="?"]
+    "utils/serialize.h"                         -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "utils/serialize.h"                         -> "base/byte_container_view.h"
+    "utils/serialize.h"                         -> "base/int128.h"
+    "utils/serialize.h"                         -> "utils/serializer.h"
+    "utils/serialize.h"                         -> "utils/serializer_adapter.h"
+    "utils/serializer.h"                        -> "base/buffer.h" [style=dotted, label="?"]
+    "utils/serializer.h"                        -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "utils/serializer.h"                        -> "base/byte_container_view.h"
+    "utils/serializer.h"                        -> "base/buffer.h" [style=dotted, label="?"]
+    "utils/serializer.h"                        -> "io/msgpack/buffer.h" [style=dotted, label="?"]
+    "utils/serializer_adapter.h"                -> "base/int128.h"
+    "utils/serializer_adapter.h"                -> "utils/serializer.h"
+    "utils/spi/item.h"                          -> "base/exception.h"
+    "utils/spi/item.h"                          -> "utils/parallel.h"
+    "utils/spi/spi_factory.h"                   -> "base/exception.h"
+    "utils/thread_pool.h"                       -> "base/exception.h"
+}

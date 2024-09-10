@@ -1,0 +1,5 @@
+/root/yacl/makeDrogon/cakeTry/build/CMakeFiles/LoginOut.dir
+/root/yacl/makeDrogon/cakeTry/build/CMakeFiles/package.dir
+/root/yacl/makeDrogon/cakeTry/build/CMakeFiles/package_source.dir
+/root/yacl/makeDrogon/cakeTry/build/CMakeFiles/edit_cache.dir
+/root/yacl/makeDrogon/cakeTry/build/CMakeFiles/rebuild_cache.dir

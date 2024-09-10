@@ -1,0 +1,44 @@
+digraph codeviz {
+    splines=true
+    sep="+15,15"
+    overlap=scalexy
+
+    node [shape=Mrecord, fontsize=12]
+
+    node [fillcolor="#ccccff", style=filled] "../../base/byte_container_view.h"        [label = "../../base/byte_container_view.h"]
+    node [fillcolor="#ccccff", style=filled] "../../base/exception.h"                  [label = "../../base/exception.h"]
+    node [fillcolor="#ccccff", style=filled] "../../base/int128.h"                     [label = "../../base/int128.h"]
+    node [fillcolor="#ccccff", style=filled] "../../math/mpint/mp_int.h"               [label = "../../math/mpint/mp_int.h"]
+    node [fillcolor="#ccccff", style=filled] "../../math/mpint/mp_int_enforce.h"       [label = "../../math/mpint/mp_int_enforce.h"]
+    node [fillcolor="#ccccff", style=filled] "../../math/mpint/tommath_ext_features.h" [label = "../../math/mpint/tommath_ext_features.h"]
+    node [fillcolor="#ccccff", style=filled] "../ecc/any_ptr.h"                        [label = "../ecc/any_ptr.h"]
+    node [fillcolor="#ccccff", style=filled] "../ecc/curve_meta.h"                     [label = "../ecc/curve_meta.h"]
+    node [fillcolor="#ccccff", style=filled] "../ecc/ec_point.h"                       [label = "../ecc/ec_point.h"]
+    node [fillcolor="#ccccff", style=filled] "../ecc/ecc_spi.h"                        [label = "../ecc/ecc_spi.h"]
+    node [fillcolor="#ccccff", style=filled] "./hash.h"                                [label = "./hash.h"]
+    node [fillcolor="#ccccff", style=filled] "capsule.h"                               [label = "capsule.h"]
+    node [fillcolor="#ccccff", style=filled] "keys.h"                                  [label = "keys.h"]
+    node [fillcolor="#ccccff", style=filled] "tpre.h"                                  [label = "tpre.h"]
+
+    "../../math/mpint/mp_int.h"               -> "../../base/byte_container_view.h"
+    "../../math/mpint/mp_int.h"               -> "../../base/int128.h"
+    "../../math/mpint/mp_int.h"               -> "../../math/mpint/mp_int_enforce.h"
+    "../../math/mpint/mp_int.h"               -> "../../math/mpint/tommath_ext_features.h"
+    "../../math/mpint/mp_int_enforce.h"       -> "../../base/exception.h"
+    "../ecc/any_ptr.h"                        -> "../../base/exception.h"
+    "../ecc/ec_point.h"                       -> "../ecc/any_ptr.h"
+    "../ecc/ec_point.h"                       -> "../../math/mpint/mp_int.h"
+    "../ecc/ecc_spi.h"                        -> "../../base/byte_container_view.h"
+    "../ecc/ecc_spi.h"                        -> "../ecc/curve_meta.h"
+    "../ecc/ecc_spi.h"                        -> "../ecc/ec_point.h"
+    "../ecc/ecc_spi.h"                        -> "../../math/mpint/mp_int.h"
+    "./hash.h"                                -> "../ecc/ecc_spi.h"
+    "capsule.h"                               -> "../ecc/ec_point.h"
+    "capsule.h"                               -> "keys.h"
+    "capsule.h"                               -> "../../math/mpint/mp_int.h"
+    "keys.h"                                  -> "../ecc/ec_point.h"
+    "keys.h"                                  -> "./hash.h"
+    "keys.h"                                  -> "../../math/mpint/mp_int.h"
+    "tpre.h"                                  -> "capsule.h"
+    "tpre.h"                                  -> "keys.h"
+}

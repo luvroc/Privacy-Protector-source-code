@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/runtest.dir/main.cc.o -o runtest  ../dependency/lib/libtpre.a -lfmt::fmt 
