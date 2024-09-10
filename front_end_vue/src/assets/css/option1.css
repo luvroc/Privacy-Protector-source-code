@@ -1,0 +1,108 @@
+/* 我的数据 */
+#option1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+/* 我的数据左侧 */
+#option1Part1Mydata{
+    min-width: 13rem;
+    min-height: 12rem;
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    margin-left:2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 我的数据左侧操作选项 */
+.option1Part1MydataOption{
+    width: 80%;
+    height: 100%;
+    max-height: 7rem;
+    background-color: #6292CB;
+    border-radius: 20px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.option1Part1MydataOption:hover{
+    background-color: #5181bd;
+}
+.option1Part1MydataOptionFonts{
+    color: white;
+    margin: 0.5rem;
+}
+.option1Part1MydataOptionName{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.option1Part1MydataOptionDetail{
+    font-size: 15px;
+    width: 125px;
+    white-space: auto;
+}
+/* 我的数据右侧 */
+.option1Part2{
+    min-width: 20rem;
+    width: 75%;
+    height: 90%;
+    background-color: #f3f7ff;
+    margin-top: 0rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+/* 我的数据右侧四个栏 */
+.option1Part2children{
+    position: relative;
+    min-width: 10rem;
+    width: 45%;
+    height: 42%;
+    background-color: white;
+    border-radius: 10px;
+}
+.option1Part2children:nth-child(1){
+    /* background-color: aquamarine; */
+    background-color: white;
+    margin-right: 1rem;
+}
+.option1Part2children:nth-child(2){
+    margin-left: 1rem;
+    background-color: white;
+}
+.option1Part2children:nth-child(3){
+    margin-right: 1rem;
+    /* background-color: antiquewhite; */
+    background-color: white;
+}
+.option1Part2children:nth-child(4){
+    margin-left: 1rem;
+    background-color: white;
+}
+
+#option1Part2Choice3{
+    input{
+        background-color: transparent;
+        border: hidden;
+        height: 2rem;
+    }
+    button{
+        border: hidden;
+        background-color: #5181bd;
+        width: 6rem;
+        height: 2rem;
+        border-radius: 5px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}

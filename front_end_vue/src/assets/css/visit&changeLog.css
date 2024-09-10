@@ -1,0 +1,26 @@
+.changeList,.visitorList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.listData,.listHead,.logTitle{
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: solid #dbe2ef 1px;
+}
+
+.logTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+.listData,.listHead{
+    font-weight: 300;
+}

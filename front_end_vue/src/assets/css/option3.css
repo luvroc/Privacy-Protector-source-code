@@ -1,0 +1,52 @@
+#option3{
+    display: flex;
+    /* justify-content: center; */
+    align-items:center ;
+    flex-direction: column;
+
+}
+#option3visitMenu{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 3rem;
+    top: 10rem;
+    background-color: white;
+    border-radius: 100px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#option3visitMenuForm{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    /* background-color: antiquewhite; */
+}
+#option3visitMenuFormInput{
+    height: 100%;
+    width: 60%;
+    border: hidden;
+    border-left: solid rgba(0, 0, 0, 0.5) 2px;
+    padding-left: 2rem;
+    outline: none;
+    /* background-color: antiquewhite; */
+}
+
+
+
+#option3visitData{
+    min-height: 10rem;
+    min-width: 20rem;
+    width: 90rem;
+    height: 32rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
